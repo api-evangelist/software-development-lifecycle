@@ -1,14 +1,11 @@
 name: Software Development Lifecycle
-description: A structured process for planning, creating, testing, and deploying software
-  systems through distinct phases including requirements gathering, design, implementation,
-  testing, deployment, and maintenance. It helps development teams catch defects early
-  and maintain confidence in software releases.
+description: A structured process for planning, creating, testing, and deploying software systems through distinct phases including requirements gathering, design, implementation, testing, deployment, and maintenance. It helps development teams catch defects early and maintain confidence in software releases.
 url: https://en.wikipedia.org/wiki/Software_development_process
 tags:
-- Software Engineering
-- Project Management
-- Development Process
-- Quality Assurance
+  - Development Process
+  - Project Management
+  - Quality Assurance
+  - Software Engineering
 created: '2025'
 modified: '2025'
 apis: []
