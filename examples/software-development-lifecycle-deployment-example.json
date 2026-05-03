@@ -1,0 +1,15 @@
+{
+  "id": "deploy-auth-service-20260502-001",
+  "application": "auth-service",
+  "version": "3.1.0",
+  "environment": "production",
+  "strategy": "blue-green",
+  "status": "succeeded",
+  "triggeredBy": "ci-cd-pipeline",
+  "pipeline": "pipeline-auth-service-main",
+  "commit": "a7f3d82c94b1e05f2c8d3a1b6e9f4c7d0e2b5a8f",
+  "startedAt": "2026-05-02T08:30:00Z",
+  "completedAt": "2026-05-02T08:47:23Z",
+  "rollbackOf": null,
+  "healthCheckUrl": "https://auth.example.com/health"
+}

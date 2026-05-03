@@ -1,0 +1,20 @@
+{
+  "name": "Sprint",
+  "description": "A time-boxed iteration in agile software development containing committed work items.",
+  "fields": [
+    { "name": "id", "type": "string", "required": true, "description": "Unique identifier" },
+    { "name": "name", "type": "string", "required": true, "description": "Sprint name" },
+    { "name": "goal", "type": "string", "required": false, "description": "Sprint objective" },
+    { "name": "startDate", "type": "date", "required": true, "description": "Sprint start date" },
+    { "name": "endDate", "type": "date", "required": true, "description": "Sprint end date" },
+    { "name": "status", "type": "string", "required": true, "description": "State: future, active, completed, cancelled" },
+    { "name": "capacity", "type": "integer", "required": false, "description": "Team capacity in story points" },
+    { "name": "velocity", "type": "integer", "required": false, "description": "Actual completed story points" },
+    { "name": "workItems", "type": "array<string>", "required": false, "description": "Work item identifiers" },
+    { "name": "team", "type": "string", "required": false, "description": "Team identifier" },
+    { "name": "board", "type": "string", "required": false, "description": "Board identifier" },
+    { "name": "completedPoints", "type": "integer", "required": false, "description": "In-flight completed points" },
+    { "name": "created", "type": "datetime", "required": false, "description": "Creation timestamp" },
+    { "name": "modified", "type": "datetime", "required": false, "description": "Last modification timestamp" }
+  ]
+}

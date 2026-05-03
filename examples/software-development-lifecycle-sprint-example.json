@@ -1,0 +1,25 @@
+{
+  "id": "sprint-2026-05-01",
+  "name": "Sprint 2026-Q2-3",
+  "goal": "Complete authentication service migration to OAuth 2.1 and improve pipeline test coverage to 85%.",
+  "startDate": "2026-04-28",
+  "endDate": "2026-05-11",
+  "status": "active",
+  "capacity": 40,
+  "velocity": null,
+  "completedPoints": 18,
+  "workItems": [
+    "ENG-2401",
+    "ENG-2402",
+    "ENG-2403",
+    "ENG-2410",
+    "ENG-2415",
+    "ENG-2418",
+    "BUG-891",
+    "BUG-904"
+  ],
+  "team": "platform-engineering",
+  "board": "platform-board",
+  "created": "2026-04-21T10:00:00Z",
+  "modified": "2026-05-01T09:15:00Z"
+}

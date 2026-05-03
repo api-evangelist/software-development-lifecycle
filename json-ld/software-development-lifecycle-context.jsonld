@@ -1,0 +1,90 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "sdlc": "https://api-evangelist.com/vocab/sdlc#",
+    "schema": "https://schema.org/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "Sprint": "sdlc:Sprint",
+    "Deployment": "sdlc:Deployment",
+    "BuildArtifact": "sdlc:BuildArtifact",
+    "SecurityScan": "sdlc:SecurityScan",
+    "TestRun": "sdlc:TestRun",
+    "Release": "sdlc:Release",
+    "Incident": "sdlc:Incident",
+
+    "id": "@id",
+    "type": "@type",
+
+    "name": "schema:name",
+    "description": "schema:description",
+    "version": "schema:version",
+    "created": {
+      "@id": "schema:dateCreated",
+      "@type": "xsd:dateTime"
+    },
+    "modified": {
+      "@id": "schema:dateModified",
+      "@type": "xsd:dateTime"
+    },
+
+    "goal": "sdlc:goal",
+    "capacity": "sdlc:capacity",
+    "velocity": "sdlc:velocity",
+    "workItems": "sdlc:workItems",
+    "team": "sdlc:team",
+    "board": "sdlc:board",
+    "completedPoints": "sdlc:completedPoints",
+    "startDate": {
+      "@id": "sdlc:startDate",
+      "@type": "xsd:date"
+    },
+    "endDate": {
+      "@id": "sdlc:endDate",
+      "@type": "xsd:date"
+    },
+
+    "application": "sdlc:application",
+    "environment": "sdlc:environment",
+    "strategy": "sdlc:strategy",
+    "status": "sdlc:status",
+    "triggeredBy": "sdlc:triggeredBy",
+    "pipeline": "sdlc:pipeline",
+    "commit": "sdlc:commit",
+    "startedAt": {
+      "@id": "sdlc:startedAt",
+      "@type": "xsd:dateTime"
+    },
+    "completedAt": {
+      "@id": "sdlc:completedAt",
+      "@type": "xsd:dateTime"
+    },
+    "rollbackOf": "sdlc:rollbackOf",
+    "healthCheckUrl": {
+      "@id": "sdlc:healthCheckUrl",
+      "@type": "@id"
+    },
+
+    "severity": "sdlc:severity",
+    "affectedServices": "sdlc:affectedServices",
+    "resolvedAt": {
+      "@id": "sdlc:resolvedAt",
+      "@type": "xsd:dateTime"
+    },
+
+    "repository": {
+      "@id": "doap:repository",
+      "@type": "@id"
+    },
+    "homepage": {
+      "@id": "doap:homepage",
+      "@type": "@id"
+    },
+    "language": "doap:programming-language",
+    "license": {
+      "@id": "doap:license",
+      "@type": "@id"
+    }
+  }
+}

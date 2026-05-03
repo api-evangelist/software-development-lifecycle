@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://api-evangelist.com/schemas/software-development-lifecycle/sprint",
+  "title": "Sprint",
+  "description": "A time-boxed iteration in agile development methodology, containing a defined set of work items to be completed and delivered.",
+  "type": "object",
+  "required": ["id", "name", "startDate", "endDate", "status"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the sprint."
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable sprint name, e.g., 'Sprint 42' or '2026-Q2-Sprint-3'."
+    },
+    "goal": {
+      "type": "string",
+      "description": "High-level objective that the team commits to achieving during this sprint."
+    },
+    "startDate": {
+      "type": "string",
+      "format": "date",
+      "description": "Date when the sprint begins."
+    },
+    "endDate": {
+      "type": "string",
+      "format": "date",
+      "description": "Date when the sprint ends."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["future", "active", "completed", "cancelled"],
+      "description": "Current state of the sprint."
+    },
+    "capacity": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Total story points the team has capacity to complete in this sprint."
+    },
+    "velocity": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Actual story points completed at sprint close."
+    },
+    "workItems": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of work item identifiers committed to this sprint."
+    },
+    "team": {
+      "type": "string",
+      "description": "Identifier of the team executing this sprint."
+    },
+    "board": {
+      "type": "string",
+      "description": "Identifier of the board this sprint belongs to."
+    },
+    "completedPoints": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Story points completed so far during the sprint."
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when the sprint was created."
+    },
+    "modified": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when the sprint was last modified."
+    }
+  },
+  "additionalProperties": false
+}

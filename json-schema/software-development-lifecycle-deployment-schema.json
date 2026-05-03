@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://api-evangelist.com/schemas/software-development-lifecycle/deployment",
+  "title": "Deployment",
+  "description": "Represents a software deployment event including version, environment, strategy, and outcome.",
+  "type": "object",
+  "required": ["id", "application", "version", "environment", "status"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the deployment."
+    },
+    "application": {
+      "type": "string",
+      "description": "Identifier of the application being deployed."
+    },
+    "version": {
+      "type": "string",
+      "description": "Version or artifact tag being deployed, e.g., '2.4.1' or 'sha-abc123'."
+    },
+    "environment": {
+      "type": "string",
+      "enum": ["development", "staging", "production", "canary"],
+      "description": "Target deployment environment."
+    },
+    "strategy": {
+      "type": "string",
+      "enum": ["rolling", "blue-green", "canary", "recreate"],
+      "description": "Deployment rollout strategy used."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["pending", "in-progress", "succeeded", "failed", "rolled-back"],
+      "description": "Current status of the deployment."
+    },
+    "triggeredBy": {
+      "type": "string",
+      "description": "User or automated system that triggered the deployment."
+    },
+    "pipeline": {
+      "type": "string",
+      "description": "CI/CD pipeline identifier that produced this deployment."
+    },
+    "commit": {
+      "type": "string",
+      "description": "Git commit SHA associated with this deployment."
+    },
+    "startedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when the deployment started."
+    },
+    "completedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when the deployment completed or failed."
+    },
+    "rollbackOf": {
+      "type": "string",
+      "description": "Identifier of the failed deployment this was a rollback of, if applicable."
+    },
+    "healthCheckUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL used to verify deployment health after rollout."
+    }
+  },
+  "additionalProperties": false
+}
