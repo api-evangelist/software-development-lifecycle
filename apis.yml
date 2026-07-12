@@ -140,6 +140,10 @@ apis:
       - type: Documentation
         url: https://internaldeveloperplatform.org/
 common:
+  - type: VulnerabilityDisclosure
+    url: security/software-development-lifecycle-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/software-development-lifecycle-domain-security.yml
   - url: https://en.wikipedia.org/wiki/Software_development_process
     name: Software Development Process
     type: Documentation
