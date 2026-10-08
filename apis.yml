@@ -163,6 +163,12 @@ apis:
       - type: Documentation
         url: https://internaldeveloperplatform.org/
 common:
+  - type: Plans
+    url: plans/software-development-lifecycle-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/software-development-lifecycle-rate-limits.yml
+  - type: FinOps
+    url: finops/software-development-lifecycle-finops.yml
   - type: VulnerabilityDisclosure
     url: security/software-development-lifecycle-vulnerability-disclosure.yml
   - type: DomainSecurity
